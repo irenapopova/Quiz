@@ -1,0 +1,314 @@
+/***
+GLOBAL
+***/
+* {
+  font-family: "Stylish", sans-serif;
+}
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.7rem;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+p {
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+/* to set the size of the main content, and so set the footer to the bottom of each page */
+.mainSize {
+  min-height: calc(100vh - 180px);
+  background-color: rgb(245, 237, 227);
+}
+
+/***
+NAV
+***/
+.icon {
+  height: 2rem;
+  margin-right: 2rem;
+}
+
+/***
+HEADER
+***/
+.Header {
+  background-image: url("./img/quiz_header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #07a799;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 5px rgb(50, 50, 50);
+  text-align: center;
+  color: whitesmoke;
+}
+
+/***
+CATEGORY CARDS and ABOUT CARDS
+***/
+
+.flexCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.responsiveCards {
+  max-width: 450px;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.mediaCards {
+  height: 300px;
+}
+
+#AboutMe {
+  background-image: url("./img/quiz_header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(189, 163, 114);
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  .flexCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #icons {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .responsiveCards {
+    max-width: 270px;
+  }
+  .mediaCards {
+    height: 230px;
+  }
+  #icons {
+    width: 300px;
+  }
+}
+
+/***
+DISPLAYQUESTION BUTTONS
+***/
+
+.green {
+  background: rgb(94, 235, 113);
+}
+.red {
+  background: rgb(233, 111, 111);
+}
+
+.brown {
+  background-color: rgb(121, 85, 72);
+}
+
+.green {
+  background-color: #06b1a1;
+}
+
+.flexQuiz {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.flexQuiz h2 {
+  background-image: url("./img/quiz_header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 8vh;
+  width: 100%;
+  color: whitesmoke;
+  text-shadow: 0 0 5px rgb(50, 50, 50);
+}
+
+.flexQuiz h3 {
+  margin: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: rgb(201, 20, 7);
+}
+
+.flexQuiz p {
+  margin: 5px;
+  color: rgb(5, 10, 163);
+  font-size: 1rem;
+}
+
+.flexQuiz span {
+  color: rgb(93, 178, 204);
+  border: 3px solid rgb(93, 178, 204);
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+  margin: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.flexQuiz img {
+  margin-top: 20px;
+  box-shadow: 0 4px 7px rgba(177, 5, 5, 0.6);
+  border-radius: 50px;
+}
+
+.flexAnswers {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.flexQuiz button,
+.flexAnswers button {
+  padding: 12px;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  color: whitesmoke;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 4px 7px rgba(50, 50, 50, 0.6);
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease 0s;
+}
+
+.flexQuiz button {
+  width: 100%;
+  
+}
+
+/***
+FOOTER
+***/
+
+.MyFooter {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(230, 34, 20);
+  box-shadow: 0 0 3px rgb(50, 50, 50);
+  height: 13vh;
+}
+
+.MyFooterIrena {
+  height: 9vh;
+}
+
+
+.MyFooterQuiz {
+  height: 5vh;
+}
+@media only screen and (max-width: 1024px) {
+  .MyFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+  }
+  .MyFooter p {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .MyFooter {
+    height: 25vh;
+  }
+  .MyFooter p {
+    font-size: 1rem;
+  }
+}
+
+/***
+FOOTER FOR ABOUT PAGE
+***/
+
+.MyFooter2 {
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: rgb(146, 25, 5);
+  box-shadow: 0 0 3px rgb(50, 50, 50);
+  height: 10vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .MyFooter2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  .MyFooter2 p {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .MyFooter2 {
+    height: 80px;
+  }
+  .MyFooter2 p {
+    font-size: 1rem;
+  }
+}
+/*** 
+Page 404 
+***/
+
+.noPage {
+  height: 50vh;
+  width: auto;
+  background-image: url("https://media.giphy.com/media/xUOxfjsW9fWPqEWouI/source.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
