@@ -30,11 +30,10 @@ const BigCard = ({ classes, onBackClick }) => {
       <Typography gutterBottom variant="h5" component="h2">
         Irena Popova
       </Typography>
-      <Typography component="p">I successfully made a career change...</Typography>
+      <Typography component="p">I have successfully transferred my passion for foreign languages to programming ones. The amazing feeling of creating something with code out of nothing triggered me to switch into building a career as a programmer. </Typography>
  
         <Typography>
-        I decided to fully devote to my hobby and to create applications. I studied at SoftUni and of course I am a self taught developer.
-        I intend to .... blababalbala
+        Possessing a strong desire to create and being motivated to learn and explore, have played a major role and detailed-oriented what I do, and provided opportunities to develop my coding skills.
       </Typography>
     </CardContent>
     
