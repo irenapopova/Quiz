@@ -25,9 +25,9 @@ onBackClick = () => {
       <main className="mainSize">
         <div id="AboutMe">
           <div className="AboutMeCard">
-            <section className="tc grow dib f3-ns no-underline black-90 pa4" style={{ display: 'flex' }}>
+            <section className="tc grow dib f3-ns no-underline black-90 pa4" style={{ display: 'flex', justifyContent: 'center' }}>
             {this.state.hideInfo ? <SmallCard onReadMoreClick={this.onReadMoreClick}/> : null}
-              <div style={{ width: 300 }}/>
+
               {this.state.hideInfo ? null : <BigCard onBackClick={this.onBackClick}/>}      
               </section>
           </div>

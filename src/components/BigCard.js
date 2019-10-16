@@ -13,13 +13,19 @@ const styles = {
       maxWidth: 600,
     },
     media: {
-      height: 200
+      height: 200,
+      width: '80%',
+    },
+    mediaWrapper: {
+        display: 'flex',
+        justifyContent: 'row',
     }
   };
 
 const BigCard = ({ classes, onBackClick }) => {
     return <Card className={classes.bigCard}>
-    <CardMedia className={classes.media} image="https://lh3.googleusercontent.com/oMpWuRH3EorWJLvv_vnjCBeiEu9Nd4Uu64mNBBgFQ6XwLo4PyDLaV3ZUVUdnDvNzDz_kT6rmcEm7nKywH_A=w2518-h1216" title="IrenaPhoto" />
+    <div className={classes.mediaWrapper}>
+    <CardMedia className={classes.media} image="https://place-hold.it/300x500" title="IrenaPhoto" />
     <CardContent>
       <Typography gutterBottom variant="h5" component="h2">
         Irena Popova
@@ -31,6 +37,23 @@ const BigCard = ({ classes, onBackClick }) => {
         I intend to .... blababalbala
       </Typography>
     </CardContent>
+    
+    
+    </div>
+
+    {/**
+     *  <CardMedia className={classes.media} image="https://place-hold.it/300x500" title="IrenaPhoto" />
+    <CardContent>
+      <Typography gutterBottom variant="h5" component="h2">
+        Irena Popova
+      </Typography>
+      <Typography component="p">I successfully made a career change...</Typography>
+ 
+        <Typography>
+        I decided to fully devote to my hobby and to create applications. I studied at SoftUni and of course I am a self taught developer.
+        I intend to .... blababalbala
+      </Typography>
+    </CardContent>   **/}
   <CardActions>
     <Button>
       <a
