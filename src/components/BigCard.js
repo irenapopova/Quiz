@@ -25,7 +25,7 @@ const styles = {
 const BigCard = ({ classes, onBackClick }) => {
     return <Card className={classes.bigCard}>
     <div className={classes.mediaWrapper}>
-    <CardMedia className={classes.media} image="https://place-hold.it/300x500" title="IrenaPhoto" />
+    <CardMedia className={classes.media} image={require ("../img/irena.jpg")} title="IrenaPhoto" />
     <CardContent>
       <Typography gutterBottom variant="h5" component="h2">
         Irena Popova

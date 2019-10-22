@@ -20,7 +20,7 @@ const styles = {
 
 const SmallCard = ({ classes, onReadMoreClick }) => {
     return <Card className={classes.smallCard}>
-    <CardMedia className={classes.media} image="https://lh3.googleusercontent.com/oMpWuRH3EorWJLvv_vnjCBeiEu9Nd4Uu64mNBBgFQ6XwLo4PyDLaV3ZUVUdnDvNzDz_kT6rmcEm7nKywH_A=w2518-h1216" title="IrenaPhoto" />
+    <CardMedia className={classes.media} image={require ("../img/irena.jpg")} title="IrenaPhoto" />
     <CardContent>
       <Typography gutterBottom variant="h5" component="h2">
         Irena Popova
